@@ -2,15 +2,19 @@ package gui;
 
 
 import gui.util.Alerts;
+import gui.util.Constraints;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.net.URL;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
-public class ViewController {
+public class ViewController implements Initializable {
 
     @FXML
     private Button btTest;
@@ -43,4 +47,10 @@ public class ViewController {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        Constraints.setTextFieldDouble(this.field1);
+        Constraints.setTextFieldDouble(this.field2);
+    }
 }
