@@ -3,14 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="229.0" prefWidth="170.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+<AnchorPane prefHeight="229.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Button fx:id="btTest" layoutX="15.0" layoutY="158.0" mnemonicParsing="false" onAction="#onBtTestAction" prefHeight="25.0" prefWidth="53.0" text="Sum" />
-      <TextField fx:id="field1" layoutX="15.0" layoutY="65.0" prefHeight="25.0" prefWidth="140.0" />
-      <TextField fx:id="field2" layoutX="15.0" layoutY="115.0" prefHeight="25.0" prefWidth="140.0" />
-      <Label fx:id="result" layoutX="17.0" layoutY="198.0" text="Result = " />
-      <Label layoutX="14.0" layoutY="98.0" text="Number 2" />
-      <Label layoutX="14.0" layoutY="48.0" text="Number 1" />
-      <Label layoutX="14.0" layoutY="14.0" text="Calculate the sum" />
+      <ComboBox fx:id="comboBoxPerson" layoutX="23.0" layoutY="26.0" onAction="#onComboBoxPersonAction" prefHeight="25.0" prefWidth="141.0" promptText="Select a person" />
+      <Button fx:id="btAll" layoutX="223.0" layoutY="26.0" mnemonicParsing="false" onAction="#onBtAllAction" prefHeight="25.0" prefWidth="41.0" text="all" />
    </children>
 </AnchorPane>
